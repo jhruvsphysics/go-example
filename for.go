@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	
+
 	i := 1
 	for i <= 3 {
 		fmt.Println(i)
@@ -28,5 +28,13 @@ func main() {
 			continue
 		}
 		fmt.Println(n)
+	}
+
+	nums := []int{2, 3, 4}
+	for num := range nums {
+		fmt.Println(num)
+	}
+	for _, num := range nums {
+		fmt.Println(num)
 	}
 }
